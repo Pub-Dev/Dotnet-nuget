@@ -5,8 +5,9 @@
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
 		<Title>PubDev - Middleware</Title>
+		<PackageId>PubDev.HttpMiddleware</PackageId>
 		<Authors>1berto - Naga</Authors>
-		<Company>$(Company)</Company>
+		<Company>PubDev</Company>
 		<Description>Pacote de testes para live do PubDev</Description>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 		<PackageProjectUrl>https://github.com/Pub-Dev/Dotnet-nuget</PackageProjectUrl>
