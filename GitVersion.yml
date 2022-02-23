@@ -1,18 +1,21 @@
-next-version: 1.0.0
 mode: Mainline
+next-version: 1.0.0
 branches:
-  master:
-    regex: ^master$|^main$
+  main:
     tag: ''
     increment: Patch
     prevent-increment-of-merged-branch-version: true
     track-merge-target: false
     tracks-release-branches: false
   alpha:
-    source-branches: ['master']
-    regex: ^alpha\/\S+
     tag: alpha
     increment: Patch
     prevent-increment-of-merged-branch-version: true
     track-merge-target: false
+    regex: ^alpha\/\S+
+    source-branches:
+    - master
     tracks-release-branches: true
+ignore:
+  sha: []
+merge-message-formats: {}
