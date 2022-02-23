@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<Title>PubDev - Middleware</Title>
+		<Authors>1berto - Naga</Authors>
+		<Company>$(Company)</Company>
+		<Description>Pacote de testes para live do PubDev</Description>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PackageProjectUrl>https://github.com/Pub-Dev/Dotnet-nuget</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/Pub-Dev/Dotnet-nuget</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		<PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+		<PackageIcon>logo.png</PackageIcon>
+		<PackageReadmeFile>readme.md</PackageReadmeFile>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.AspNetCore.Diagnostics.Abstractions" Version="2.2.0" />
+		<PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+		<PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="6.0.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="docs\readme.md" Pack="true" PackagePath="\" />
+		<None Include="img\logo.png" Pack="true" PackagePath="\" />
+	</ItemGroup>	
+</Project>

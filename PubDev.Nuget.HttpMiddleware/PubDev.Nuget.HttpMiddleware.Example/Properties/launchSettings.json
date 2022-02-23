@@ -1,0 +1,12 @@
+﻿{
+  "$schema": "https://json.schemastore.org/launchsettings.json",
+  "profiles": {
+    "PubDev.Nuget.HttpMiddleware.Example": {
+      "commandName": "Project",
+      "applicationUrl": "https://localhost:7126",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}
