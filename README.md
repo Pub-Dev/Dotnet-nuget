@@ -31,7 +31,11 @@ app.UsePubDev();
 
 ## Package Link on nuget
 
-https://www.nuget.org/packages/PubDev.HttpMiddleware/
+- https://www.nuget.org/packages/PubDev.HttpMiddleware/
+
+## References
+
+- https://docs.microsoft.com/en-us/nuget/reference/msbuild-targets#pack-target
 
 <!-- CONTACT -->
 ## Contact
