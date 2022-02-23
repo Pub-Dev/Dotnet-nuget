@@ -4,7 +4,6 @@
 		<TargetFramework>net6.0</TargetFramework>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
-		<PackageVersion>1.0.1</PackageVersion>
 		<Title>PubDev - Middleware</Title>
 		<PackageId>PubDev.HttpMiddleware</PackageId>
 		<Authors>1berto - Naga</Authors>
