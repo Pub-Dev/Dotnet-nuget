@@ -43,10 +43,10 @@ jobs:
           dotnet-version: 6.0.x
 
       - name: Restore dependencies
-        run: dotnet restore
+        run: dotnet restore ./PubDev.Nuget.HttpMiddleware/PubDev.Nuget.HttpMiddleware/PubDev.Nuget.HttpMiddleware.csproj
 
       - name: Build
-        run: dotnet build --no-restore
+        run: dotnet build ./PubDev.Nuget.HttpMiddleware/PubDev.Nuget.HttpMiddleware/PubDev.Nuget.HttpMiddleware.csproj --no-restore
 
       - name: publish on version change
         if: github.ref == 'refs/heads/main'
