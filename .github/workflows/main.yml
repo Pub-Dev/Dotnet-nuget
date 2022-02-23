@@ -40,6 +40,6 @@ jobs:
         run: dotnet pack --configuration Release ./PubDev.Nuget.HttpMiddleware/PubDev.Nuget.HttpMiddleware/PubDev.Nuget.HttpMiddleware.csproj
         
       - name: Publish the package to nuget.org
-        run: dotnet nuget push */bin/Release/*.nupkg -k $NUGET_AUTH_TOKEN -s https://api.nuget.org/v3/index.json
+        run: dotnet nuget push ./PubDev.Nuget.HttpMiddleware/PubDev.Nuget.HttpMiddleware/bin/Release/*.nupkg -k $NUGET_AUTH_TOKEN -s https://api.nuget.org/v3/index.json
         env:
           NUGET_AUTH_TOKEN: ${{ secrets.NUGET_KEY }}
