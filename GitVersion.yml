@@ -1,9 +1,10 @@
 mode: Mainline
 next-version: 1.0.0
 branches:
-  main:
+  master:
     tag: ''
-  feature:
+  alpha:
+    regex: ^alpha\/\S+
     tag: alpha
 ignore:
   sha: []
