@@ -4,6 +4,7 @@ branches:
   master:
     tag: ''
   alpha:
+    source-branches: ['main']
     regex: ^alpha\/\S+
     tag: alpha
 ignore:
