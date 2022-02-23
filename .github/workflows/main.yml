@@ -37,7 +37,7 @@ jobs:
         run: dotnet build ./PubDev.Nuget.HttpMiddleware/PubDev.Nuget.HttpMiddleware/PubDev.Nuget.HttpMiddleware.csproj --no-restore
         
       - name: Create the package
-        run: dotnet pack --configuration Release ./PubDev.Nuget.HttpMiddleware/PubDev.Nuget.HttpMiddleware/PubDev.Nuget.HttpMiddleware.csproj
+        run: dotnet pack --configuration Release ./PubDev.Nuget.HttpMiddleware/PubDev.Nuget.HttpMiddleware/PubDev.Nuget.HttpMiddleware.csproj -p:Version=1.0.${{ env.GITHUB_RUN_NUMBER }}
         
       - name: Publish the package to nuget.org
         run: dotnet nuget push ./PubDev.Nuget.HttpMiddleware/PubDev.Nuget.HttpMiddleware/bin/Release/*.nupkg -k $NUGET_AUTH_TOKEN -s https://api.nuget.org/v3/index.json
