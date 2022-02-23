@@ -3,7 +3,7 @@
 	<PropertyGroup>
 		<TargetFramework>net6.0</TargetFramework>
 		<ImplicitUsings>enable</ImplicitUsings>
-		<Nullable>enable</Nullable>		
+		<Nullable>enable</Nullable>
 		<Title>PubDev - Middleware</Title>
 		<PackageId>PubDev.HttpMiddleware</PackageId>
 		<Authors>1berto - Naga</Authors>
@@ -15,7 +15,7 @@
 		<RepositoryType>git</RepositoryType>
 		<PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
 		<PackageIcon>logo.png</PackageIcon>
-		<PackageReadmeFile>readme.md</PackageReadmeFile>		
+		<PackageReadmeFile>readme.md</PackageReadmeFile>
 	</PropertyGroup>
 
 	<ItemGroup>
@@ -27,5 +27,5 @@
 	<ItemGroup>
 		<None Include="docs\readme.md" Pack="true" PackagePath="\" />
 		<None Include="img\logo.png" Pack="true" PackagePath="\" />
-	</ItemGroup>	
+	</ItemGroup>
 </Project>

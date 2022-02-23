@@ -7,11 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="PubDev.HttpMiddleware" Version="1.0.32" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\PubDev.Nuget.HttpMiddleware\PubDev.Nuget.HttpMiddleware.csproj" />
   </ItemGroup>
 
 </Project>
