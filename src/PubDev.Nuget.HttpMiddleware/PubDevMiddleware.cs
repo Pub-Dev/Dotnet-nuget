@@ -19,7 +19,7 @@ public class PubDevMiddleware
 
     public async Task InvokeAsync(HttpContext context)
     {
-        _logger.LogWarning("🍻 Pub Dev 🍻, iniciando execução...");
+        _logger.LogWarning("🍻🍻 Pub Dev 🍻🍻, iniciando execução...");
 
         var stopwatch = new Stopwatch();
 
@@ -29,12 +29,12 @@ public class PubDevMiddleware
 
             await _next(context);
 
-            _logger.LogWarning("🍻 Pub Dev 🍻, finalizando execução...{time}", stopwatch.Elapsed.TotalMilliseconds);
+            _logger.LogWarning("🍻🍻 Pub Dev 🍻🍻, finalizando execução...{time}", stopwatch.Elapsed.TotalMilliseconds);
 
         }
         catch (Exception ex )
         {
-            _logger.LogWarning("❌ Pub Dev ❌, erro na execução execução...{time} - {@error}", stopwatch.Elapsed.TotalMilliseconds, ex);
+            _logger.LogWarning("💣❌❌ Pub Dev ❌❌, erro na execução execução...{time} - {@error}", stopwatch.Elapsed.TotalMilliseconds, ex);
         }
     }
 }
